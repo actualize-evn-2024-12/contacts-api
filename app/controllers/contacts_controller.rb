@@ -6,9 +6,9 @@ class ContactsController < ApplicationController
   end
 
   def all
-    contacts = Contact.all    
+    @contacts = Contact.all    
 
     # serialization, how to i get my data into json
-    render json: []
+    render template: "contacts/index"
   end
 end
