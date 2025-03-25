@@ -11,30 +11,30 @@
 # names = ['elvira', 'eddy', 'aaron', 'erin']
 
 # 100.times do
-#   contact = Contact.new(
-#     first_name: "elvira",
-#     last_name: "esposito",
-#     email: "elvira@gmail.com",
-#     phone_number: "567898765"
-#   )
-#   contact.save
+contact = Contact.new(
+  first_name: "elvira",
+  last_name: "esposito",
+  email: "elvira@gmail.com",
+  phone_number: "567898765"
+)
+contact.save
 # end
 
 
-p "hellooooo"
+# p "hellooooo"
 
-require 'faker'
+# require 'faker'
 
-100.times do
-  contact = Contact.new(
-    first_name: Faker::Name.first_name, 
-    last_name: Faker::Name.last_name,
-    email: Faker::Internet.email,
-    phone_number: Faker::PhoneNumber.phone_number
-  )
+# 100.times do
+#   contact = Contact.new(
+#     first_name: Faker::Name.first_name, 
+#     last_name: Faker::Name.last_name,
+#     email: Faker::Internet.email,
+#     phone_number: Faker::PhoneNumber.phone_number
+#   )
 
-  contact.save
-end
+#   contact.save
+# end
 # p contact
 # p Faker::Name.first_name      #=> "Christophe Bartell"
 # p Faker::Name.last_name      #=> "Christophe Bartell"
