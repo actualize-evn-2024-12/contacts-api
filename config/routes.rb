@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get "/first_contact" => "contacts#first"
   get "/all_contacts" => "contacts#all"
   get "/contacts" => "contacts#all"
+
+  get "/auth/github/callback" => "github#authorize"
 end
